@@ -1,0 +1,20 @@
+#wrap {
+    width:70%;
+    margin:0 auto;
+    text-align: center;
+ }
+ #left {
+    float:left;
+    width:300px;
+ }
+ #right {
+    float:right;
+    width:300px;
+ }
+ h1{
+    float:center;
+ }
+img {
+    width: 50%;
+    height: auto;
+}
