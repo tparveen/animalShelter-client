@@ -1,8 +1,9 @@
 import 'isomorphic-fetch';
+import {API_BASE_URL} from '../config';
 
 export const fetchDog = () => dispatch => {
     dispatch(fetchDogRequest());
-    return fetch('http://localhost:8080/dog').then(res => {
+    return fetch(`${API_BASE_URL}/dog`).then(res => {
         if (!res.ok) {
             throw new Error(res.statusText);
         }

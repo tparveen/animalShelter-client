@@ -1,8 +1,9 @@
 import 'isomorphic-fetch';
+import {API_BASE_URL} from '../config';
 
 export const fetchCat = () => dispatch => {
     dispatch(fetchCatRequest());
-    return fetch('http://localhost:8080/cat').then(res => {
+    return fetch(`${API_BASE_URL}/cat`).then(res => {
         if (!res.ok) {
             throw new Error(res.statusText);
         }
